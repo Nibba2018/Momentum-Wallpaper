@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <button onclick="getWallpaper()">Load Momentum Wallpaper</button>
+    <script>
+        function getWallpaper()
+        {
+            var image = document.getElementsByClassName("fadein");
+            var style = image.currentStyle || window.getComputedStyle(img, false);
+            var image_url = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            window.location = image_url;
+        }
+    </script>
+</body>
+</html>

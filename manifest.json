@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Momentum Wallpaper",
+    "version": "0.1",
+    "content_scripts":
+    [
+        {
+            "matches": ["<all_urls"]
+        }
+    ],
+    "browser_action":
+    {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Displays the current Momentum extension background wallpaper. Right click the image to save it."
+    }
+}
