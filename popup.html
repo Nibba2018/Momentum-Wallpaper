@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-    <button onclick="getWallpaper()">Load Momentum Wallpaper</button>
-    <script>
-        function getWallpaper()
-        {
-            var image = document.getElementsByClassName("fadein");
-            var style = image.currentStyle || window.getComputedStyle(img, false);
-            var image_url = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-
-            window.location = image_url;
-        }
-    </script>
+    <button onclick=getWallpaper()>Load Momentum Wallpaper</button>
+    <script src="content.js"></script>
 </body>
 </html>
